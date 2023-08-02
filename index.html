@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Dashboard</title>
+    <script src="https://www.gstatic.com/charts/loader.js"></script>
+    <script src="script.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+    />
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+  </head>
+  <body>
+    <nav class="navbar navbar-dark bg-dark">
+      <span class="navbar-brand mb-0 h1">Dashboard</span>
+      <p class="navbar-brand mb-0 text-right" style="font-size: 12pt">
+        Mesge Bayutara
+      </p>
+    </nav>
+
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-7 mt-4">
+          <div class="card" style="height: 61.5%">
+            <div class="card-header">Bar Chart</div>
+            <div class="card-body">
+              <div id="chart1"></div>
+            </div>
+          </div>
+          <div style="display: flex">
+            <div class="card mt-4 mb-4" style="width: 100%">
+              <div class="card-header">Kesimpulan</div>
+              <div class="card-body">
+                <div id="kesimpulan">
+                  <div class="mt-2">
+                    <ol class="text-justify">
+                      <li>
+                        <p>
+                          Jumlah kematian akibat bencana alam sangat berfluktuasi setiap tahunnya, 
+                          dengan peningkatan besar pada tahun 2018 (3.739 kematian), dan penurunan tajam
+                          pada tahun 2019 (352 kematian) dan 2020 (236 kematian). Namun pada tahun 2021,
+                          jumlah kematian akibat bencana alam kembali meningkat menjadi 583 orang.
+                        </p>
+                      </li>
+                      <li>
+                        <p>
+                          Bencana Non Alam dan Penyakit menunjukkan tren yang
+                          sangat meningkat dalam jumlah kematian dari tahun 2015
+                          hingga 2021. Pada tahun 2015, terdapat 3160 kematian
+                          yang meningkat secara drastis menjadi 139404 kematian
+                          pada tahun 2021. Hal ini mengindikasikan adanya
+                          permasalahan serius yang perlu ditangani dengan baik
+                          dalam hal kesehatan dan keselamatan masyarakat.
+                        </p>
+                      </li>
+                      <li>
+                        <p>
+                          Bencana Sosial menunjukkan adanya jumlah kematian yang
+                          relatif rendah dari tahun 2015 hingga 2018. Namun,
+                          jumlah kematian pada bencana sosial tersebut hampir
+                          tidak berubah sepanjang tahun 2019 hingga 2021, tetap
+                          berada pada angka rendah, yaitu berkisar antara 4
+                          hingga 25 kematian per tahun.
+                        </p>
+                      </li>
+                    </ol>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-5">
+          <div class="card mt-4" style="height: 48%">
+            <div class="card-header">Line Chart</div>
+            <div class="card-body">
+              <div class="text-center" id="chart2"></div>
+            </div>
+          </div>
+          <div class="card mt-4" style="height: 49%">
+            <div class="card-header">Table</div>
+            <div class="card-body">
+              <div class="text-center" id="table">
+                <img src="table.png" alt="table" style="width: 55%" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
